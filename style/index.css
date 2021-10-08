@@ -5,60 +5,86 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
-  background-color: #ff8800;
-  padding: 10px 20px;
+.container-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background: url('../assets/img/tree1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.logo {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 24px;
+.jumbotron {
+  text-align: center;
 }
 
-nav ul {
-  display: flex;
+.jumbotron h1{
+  color: #faebd7;
+}
+
+.jumbotron .img-cirle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.jumbotron .img-cirle img{
+  width: 200px;
+}
+
+.navbar {
+  background-color: #c80ec8;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar .navbar-ul {
   list-style: none;
 }
 
-nav ul a {
-  margin: 0 20px;
+.navbar .navbar-ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar .navbar-ul li a {
+  font-size: 20px;
   text-decoration: none;
   color: #fff;
 }
 
-article img {
-  width: 300px;
-  border-radius: 10px;
-}
-
-.card {
-  margin: 20px;
-  padding: 10px;
-  width: 600px;
-  text-align: center;
-  border: 1px solid #cecece;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-  border-radius: 10px;
-}
-
-.card p {
-  margin-top: 10px;
-  text-align: left;
-}
-
 main {
+  width: 100%;
+  min-height: 500px;
+}
+
+.container-body {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+article .card {
+  width: 500px;
+  min-height: 200px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+article .title-article {
+  margin-bottom: 20px;
 }
 
 footer{
-  background-color: #000;
+  background-color: #c80ec8;
   color: #fff;
-  padding: 20px;
+  padding: 30px 0;
   width: 100%;
   text-align: center;
 }
